@@ -1,0 +1,13 @@
+.underline-title {
+    position: relative;
+&::after {
+    content: "";
+    width: 188px;
+    height: 1px;
+    background-color: #DEDEDE;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+}

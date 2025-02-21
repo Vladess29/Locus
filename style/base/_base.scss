@@ -1,0 +1,12 @@
+html * {
+  -webkit-text-size-adjust: none;
+}
+
+// remove all transition where is needed
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

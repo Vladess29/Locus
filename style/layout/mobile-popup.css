@@ -1,0 +1,29 @@
+.mobile-popup {
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+.mobile-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-popup .container .mobile-popup__wrapper .mobile-popup__menu .mobile-popup__list .mobile-popup__item {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 37.5px;
+  letter-spacing: 0%;
+  color: #404242;
+}

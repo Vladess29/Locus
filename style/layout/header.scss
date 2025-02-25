@@ -41,6 +41,9 @@
                         margin-top: 10px;
                         &:not(:first-child) {
                             margin-left: 85px;
+                            @media (max-width: 1200px){
+                                margin-left: 20px;
+                            }
                         }
                         a {
                             font-family: Poppins;
@@ -92,6 +95,9 @@
                     &:hover {
                         background-color: #FEC62D;
                     }
+                    @media (max-width: 1200px){
+                        padding: 15px 40px;
+                    }
                 }
             }
         }
@@ -107,7 +113,7 @@
     z-index: 50;
 
     
-    @media (max-width: 1025px){
+    @media (max-width: 1024px){
         display: flex;
         margin-left: 20px;
     }

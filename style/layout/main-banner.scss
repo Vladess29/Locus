@@ -1,3 +1,80 @@
 // section,footer{
 //     display: none !important; 
 // }
+.main-banner {
+    padding-top: 50px;
+    border: 2px dashed #404242;
+    .container {
+        .main-banner__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url(/img/main-banner/MainImg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-top: 50px;
+            padding-bottom: 120px;
+            background-size: 50%;
+            @media (max-width: 1024px){
+                background-image: none;
+            }
+            .main-banner__left {
+                .main-banner__title {
+                    font-family: Poppins;
+                    font-weight: 800;
+                    font-size: 70px;
+                    line-height: 105px;
+                    color: #1C2323;
+                    width: 45%;
+                    @media (max-width: 1200px){
+                        font-size: 60px;
+                        line-height: 70px;
+                    }
+                    @media (max-width: 1024px){
+                        width: 95%;
+                    }
+                    @media (max-width: 500px){
+                        font-size: 55px;
+                        width: 100%;
+                    }
+                }
+                .main-banner__text {
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: #404242;
+                    width: 45%;
+                    @media (max-width: 1024px){
+                        width: 95%;
+                    }
+                }
+
+                .main-banner__button__wrapper {
+                    margin-top: 80px;
+                    .main-banner__button {
+                        font-family: Poppins;
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 37.5px;
+                        color: #fff;
+                        background-color: #58A9A5;
+                        border-radius: 20px 20px 20px 0px;
+                        padding: 21px 83px 21px 90px;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            background-color: #FEC62D;
+                        }
+                    }
+                }
+            }
+            .main-banner__right {
+                // background-image: url(/img/main-banner/MainImg.png);
+                // img {
+                //     // width: 100%;
+                //     // height: auto;
+                // }
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+.test {
+    padding-top: 250px;
+    .container {
+        .test-title {
+            font-family: Poppins;
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 105px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #1C2323;
+            @media (max-width: 600px){
+                font-size: 50px;
+                line-height: 70px;
+            }
+        }
+        .test-wrapper {
+            .test-top__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // justify-content: space-between;
+                opacity: 0; /* Скрываем блоки изначально */
+                transform: translateY(50px); /* Сдвигаем вниз за пределы видимости */
+                transition: opacity 0.5s ease, transform 0.5s ease; /* Плавное появление и движение */
+                &.show {
+                    opacity: 1; /* Показываем блок */
+                    transform: translateY(0); /* Возвращаем на исходную позицию */
+                }
+                @media (max-width: 1600px){
+                    flex-direction: column;
+                }
+                
+                .test-top__item {
+                    &:not(:first-child) {
+                        margin-left: 90px;
+                        @media (max-width: 1600px){
+                            margin-left: 0;
+                            margin-top: 30px;
+                        }
+                    }
+                    img {
+
+                    }
+                }
+            }
+            .test-bottom__wrapper {
+                display: flex;
+                padding-top: 62px;
+                @media (max-width: 1600px){
+                    flex-direction: column;
+                }
+                
+                .test-bottom__left {
+                    // max-width: 615px;
+                    opacity: 0; /* Скрываем блоки изначально */
+                    transform: translateX(-50px); /* Сдвигаем вниз за пределы видимости */
+                    transition: opacity 0.5s ease, transform 0.5s ease; /* Плавное появление и движение */
+                    &.show {
+                        opacity: 1; /* Показываем блок */
+                        transform: translateY(0); /* Возвращаем на исходную позицию */
+                    }
+                    @media (max-width: 1600px){
+                        display: flex;
+                        justify-content: center;
+                    }
+                    img {
+                        // width: 100%;
+                        // height: 100%;
+                        // object-fit: cover;
+                        @media (max-width: 650px){
+                            width: 100%;
+                        }
+                    }   
+                }
+                .test-bottom__right {
+                    background-color: #CCF0E6;
+                    width: 62%;
+                    opacity: 0; /* Скрываем блоки изначально */
+                    transform: translateX(50px); /* Сдвигаем вниз за пределы видимости */
+                    transition: opacity 0.5s ease, transform 0.5s ease; /* Плавное появление и движение */
+                    &.show {
+                        opacity: 1; /* Показываем блок */
+                        transform: translateX(0); /* Возвращаем на исходную позицию */
+                    }
+                    @media (max-width: 1600px){
+                        background-color: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                    .test-bottom__right__info {
+                        display: flex;
+                        padding-left: 135px;
+                        padding-top: 50px;
+                        width: 100%;
+                        @media (max-width: 1600px){
+                            justify-content: center;
+                            padding-left: 0;
+                            justify-content: space-between;
+                        }
+                        @media (max-width: 800px){
+                            flex-direction: column;
+                        }
+                        // justify-content: space-between;
+
+                        .test-bottom__right__item {
+                            @media (max-width: 800px){
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            &:not(:first-child){
+                                margin-left: 117px;
+                                @media (max-width: 800px){
+                                    margin-left: 0;
+                                }
+                            }
+                            .test-bottom__right__number {
+                                font-family: Poppins;
+                                font-weight: 800;
+                                font-size: 70px;
+                                // line-height: 105px;
+                                letter-spacing: 0%;
+                                color: #58A9A5;
+                            }
+                            .test-bottom__right__disc {
+                                font-family: Poppins;
+                                font-weight: 600;
+                                font-size: 30px;
+                                line-height: 45px;
+                                letter-spacing: 0%;
+                                color: #58A9A5;
+                                br {
+                                    @media (max-width: 800px){
+                                        display: none;
+                                    }
+                                }
+                                @media (max-width: 800px){
+                                    margin-left: 30px;
+                                }
+                            }
+                        }
+                    }
+                    .test-bottom__right__text {
+                        padding-left: 137px;
+                        padding-top: 65px;
+                        width: 90%;
+                        position: relative;
+                        &::before {
+                            content: '“';
+                            font-family: Port Lligat Sans;
+                            font-weight: 400;
+                            font-size: 300px;
+                            line-height: 321.3px;
+                            letter-spacing: 0%;
+                            color: #fff;
+                            position: absolute;
+                            left: 82px;
+                            top: -17px;
+                            z-index: 5;
+                        }
+                        @media (max-width: 1600px){
+                            padding-left: 0;
+                            padding-top: 0;
+                            width: 100%;
+                        }
+                        p {
+                            font-family: Poppins;
+                            font-weight: 500;
+                            font-size: 25px;
+                            line-height: 37.5px;
+                            letter-spacing: 0%;
+                            color: #486958;
+                            position: relative;
+                            z-index: 10;
+                            
+                            
+                        }
+                        .autor {
+                            font-family: Poppins;
+                            font-weight: 500;
+                            font-size: 25px;
+                            line-height: 37.5px;
+                            letter-spacing: 0%;
+                            color: #58A9A5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
